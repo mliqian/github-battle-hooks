@@ -99,7 +99,6 @@ export default function Popular() {
     function() {
       setError(null);
       if (!repos[selectedLanguage]) {
-        console.log("测试 log: Ready to fetch");
         fetchPopularRepos(selectedLanguage)
           .then(data => {
             setRepos(repos => ({
